@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Tippr",
+  "description": "This Chrome extension allows a user to easily tip the owner of a website even if they don't already accept Bitcoin by looking up the email address via a WHIOS lookup of the owner of the domain and sending them an email with information on how to collect the tip.",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "https://tippr.org/app/"
+  ]
+}
