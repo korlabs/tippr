@@ -13,4 +13,4 @@ This is version v0.1. Some thanks is in order:
 <br />
 -Thanks to the countless others who have helped me work out the kinks!
 <br /><br />
-If you know PHP, please help contribute code! The files for the Chrome extension are also in here, so if you know any special Chrome tips that I don't- help out!
+If you know PHP, please help contribute code! The files for the Chrome extension are also in here, so if you know any special Chrome tips that we don't- help out!
