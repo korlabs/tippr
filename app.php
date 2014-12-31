@@ -6,13 +6,27 @@
 	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
 	
 	<!-- Custom styles for this template -->
-        <link href='https://tippr.org/app/jumbotron-narrow.css' rel='stylesheet'>
+        <link href='jumbotron-narrow.css' rel='stylesheet'>
 
 	<!-- Optional theme -->
 	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css'>
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js'></script>
+
+	<script src="qrcode-generator/js/qrcode.js"></script>
+	<script type="text/javascript">
+		var updateQr = function(text) {
+			var qr = qrcode(3, 'M');
+			qr.addData(text);
+			qr.make();
+
+			var cellSize = 4;
+
+			document.getElementById('qr').innerHTML = qr.createImgTag(cellSize);
+		};
+	</script>
+	
 	</head>
 <?php
   $domain=$_GET['domain'];
@@ -117,11 +131,16 @@ if (@mail($to, $subject, $body,
 else
     echo " ";
 ?>
+<body onLoad="updateQr('bitcoin:<?php echo $address; ?>');">
 <?php
 if($email == ""){
 	echo "<center><b>There is no email associated with this domain in our WHOIS database.</b></center><br />";
 }
+else {
 ?>
 <center>Send Bitcoins to:<br /><br />
-<img src='https://api.qrserver.com/v1/create-qr-code/?size=90x90&data=bitcoin:<?php echo $address; ?>'><br /><br />(<?php echo $address; ?>)<br /></center>
+<div id="qr"></div><br /><br />(<?php echo $address; ?>)<br /></center>
+<?php
+}
+?>
 <center><br />Powered by <a href="https://tippr.org">Tippr</a>.</center>
