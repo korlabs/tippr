@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tippr</title>
+    <style>
+      body {
+        min-width: 357px;
+        overflow-x: hidden;
+      }
+
+      img {
+        margin: 5px;
+        border: 2px solid black;
+        vertical-align: middle;
+        width: 75px;
+        height: 75px;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+  </head>
+  <body>
+  <script src="tippr.js"></script>
+  <!-- <iframe seamless="seamless" title="tippr" width="600" height="300" src="https://tippr.org/app/form.php"></iframe>-->
+  <noscript>
+<p>This site uses JavaScript. You must allow JavaScript in your browser.</p>
+</noscript>
+
+<iframe width = "0" height = "0" style = "visibility:hidden; display:none;">
+<p>Your browser does not support iframes.</p>
+</iframe>
+
+  </body>
+</html>
+
