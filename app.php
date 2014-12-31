@@ -139,7 +139,7 @@ if($email == ""){
 else {
 ?>
 <center>Send Bitcoins to:<br /><br />
-<div id="qr"></div><br /><br />(<?php echo $address; ?>)<br /></center>
+<div id="qr"></div><br />(<?php echo $address; ?>)</center>
 <?php
 }
 ?>
