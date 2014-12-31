@@ -1,6 +1,6 @@
 <html>
-  <head>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Tippr</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
@@ -13,11 +13,11 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js'></script>
-  </head>
+	</head>
 <?php
   $domain=$_GET['domain'];
-  $username="YOUR-USERNAME-HERE";
-  $password="YOUR-PASSWORD-HERE";	
+  $username="lakotadlustig";
+  $password="Lalaland72";	
   $contents = file_get_contents("https://www.whoisxmlapi.com//whoisserver/WhoisService?domainName=$domain&username=$username&password=$password&outputFormat=JSON");
   //echo $contents;
   $res=json_decode($contents);
@@ -34,7 +34,7 @@
   }
 ?>
 <?php 
-$JSONResponse = file_get_contents("https://blockchain.info/api/v2/create_wallet?api_code=API-CODE-HERE&password=changeyourpassword&email=$email");
+$JSONResponse = file_get_contents("https://blockchain.info/api/v2/create_wallet?api_code=82101e30-be7e-49b6-a619-39d22890d805&password=changeyourpassword&email=$email");
 $arr = json_decode($JSONResponse, true);
 $address = $arr['address'];
 $link = $arr['link'];
