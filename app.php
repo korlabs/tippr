@@ -117,5 +117,11 @@ if (@mail($to, $subject, $body,
 else
     echo " ";
 ?>
+<?php
+if($email == ""){
+	echo "<center><b>There is no email associated with this domain in our WHOIS database.</b></center><br />";
+}
+?>
 <center>Send Bitcoins to:<br /><br />
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=90x90&data=bitcoin:<?php echo $address; ?>"><br /><br />(<?php echo $address; ?>)<br /><br />Powered by <a href="https://tippr.org">Tippr</a>.</center>
+<img src='https://api.qrserver.com/v1/create-qr-code/?size=90x90&data=bitcoin:<?php echo $address; ?>'><br /><br />(<?php echo $address; ?>)<br /></center>
+<center><br />Powered by <a href="https://tippr.org">Tippr</a>.</center>
