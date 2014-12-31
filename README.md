@@ -3,7 +3,7 @@ tippr
 
 Tippr revolutionizes Bitcoin tipping by allowing people to tip anyone, even if they don't already have a Bitcoin wallet or social account.
 
-This is version v0.1. Some thanks is in order:
+This is version v0.0.1. Some thanks is in order:
 
 -Thanks to Wade Dempsey for buying the tippr.org domain.
 <br />
