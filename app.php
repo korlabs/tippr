@@ -143,9 +143,9 @@ if($email == ""){
 }
 else {
 ?>
-<center>Send Bitcoins to:<br /><br />
-<div id="qr"></div><br />(<?php echo $address; ?>)</center>
+<center>Send Bitcoins to:<br />
+<div id="qr"></div>(<?php echo $address; ?>)</center>
 <?php
 }
 ?>
-<center><br />Powered by <a href="https://tippr.org">Tippr</a>.</center>
+<center><br />If the tip is not collected within a week, it will be returned to you.<br />Powered by <a href="https://tippr.org">Tippr</a>.</center>
